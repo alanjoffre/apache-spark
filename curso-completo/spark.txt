@@ -1,16 +1,23 @@
 CursoPyspark / Spark
 
-Baixe e instale:
--7zip
--Java JDK
--Apache Spark
--hadoop
--Anaconda
+Importante: 
+Os diretórios de instalação não podem ter espaço.
+Crie um ambiente Virtual.
 
-Configure as variaveis de ambiente no windows:
+Baixe e instale:
+
+Recomendo instalar o JAVA na raiz do C:\
+-Java JDK-11 - https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html
+
+-Anaconda
+Não esqueça de adicionar o path do Anaconda, nas variaveis de sistema(instalação)
+
+-7zip
+
+-Apache Spark 3.1.2-bin-hadoop3.2.tgz - https://archive.apache.org/dist/spark/spark-3.1.2/
 
 # Variáveis para JDK
-JAVA_HOME = C:\Java\jdk-11.0.3
+JAVA_HOME = C:\Java\jdk-11\bin
 PATH = C:\Java\jdk-11.0.3\bin
 
 # Variáveis para Spark
@@ -39,5 +46,13 @@ https://github.com/cdarlint/winutils
 1) Criação de um diretório C:\tmp\hive
 2) Permitindo o acesso via prompt do windows: C:\Hadoop\bin\winutils.exe chmod -R 777 C:\tmp\hive
 
+
 Comando para testar as aplicações instaladas (CMD):
+java -version
+python --version
+spark-shell
+CONTROL + C - sair do scala
+pyspark
+
+
 
